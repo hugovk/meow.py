@@ -13,9 +13,13 @@ Well, someone had better create 50,000 meows just to get it out of the way.
 
 But this isn't just "meow" 50,000 times. meow.py replaces all words with a meow of the same length, keeping punctuation.
 
-Usage:
+Usage
+-----
 
-`python meow.py infile.txt > outfile.txt"
+    python meow.py infile.txt > outfile.txt
+
+Output
+------
 
 Here's the above rule put through meow.py:
 
@@ -25,9 +29,9 @@ Here's the output of running meow.py on some Project Gutenberg (Purrject Mewtenb
 
 | Original                                                                     |                        meow                        |  words |                     with translation                    |  words |
 |------------------------------------------------------------------------------|:--------------------------------------------------:|:------:|:-------------------------------------------------------:|:------:|
-| [Cats, by W. Gordon Stables](43429-0.txt)                                   |  [txt](meow-43429-0.txt) [pdf](meow-43429-0.pdf) |  90,574 | [txt](meow-x2-43429-0.txt) [pdf](meow-x2-43429-0.pdf) | 181,149 |
-| [Cats, by Charles H. Ross](43790-0.txt)                                     |  [txt](meow-43790-0.txt) [pdf](meow-43790-0.pdf) |  59,725 | [txt](meow-x2-43790-0.txt) [pdf](meow-x2-43790-0.pdf) | 119,451 |
-| [The Jungle Book by Kipling](jnglb10.txt)                                   |  [txt](meow-jnglb10.txt) [pdf](meow-jnglb10.pdf) |  52,526 | [txt](meow-x2-jnglb10.txt) [pdf](meow-x2-jnglb10.pdf) | 105,052 |
-| [An Enquiry Concerning the Principles of Morals by David Hume](nqpmr10.txt) | [txt](meow-nqpmr10.txt) [pdf]( meow-nqpmr10.pdf) |  50,603 | [txt](meow-x2-nqpmr10.txt) [pdf](meow-x2-nqpmr10.pdf) | 101,206 |
-| [Moby Dick; or The Whale, by Herman Melville](pg2701.txt)                   |  [txt](meow-pg2701.txt) [pdf]( meow-pg2701.pdf)  | 215,136 |  [txt](meow-x2-pg2701.txt) [pdf](meow-x2-pg2701.pdf)  | 430,272 |
+| [Cats, by W. Gordon Stables](43429-0.txt?raw=true)                                   |  [txt](meow-43429-0.txt?raw=true) [pdf](meow-43429-0.pdf?raw=true) |  90,574 | [txt](meow-x2-43429-0.txt?raw=true) [pdf](meow-x2-43429-0.pdf?raw=true) | 181,149 |
+| [Cats, by Charles H. Ross](43790-0.txt?raw=true)                                     |  [txt](meow-43790-0.txt?raw=true) [pdf](meow-43790-0.pdf?raw=true) |  59,725 | [txt](meow-x2-43790-0.txt?raw=true) [pdf](meow-x2-43790-0.pdf?raw=true) | 119,451 |
+| [The Jungle Book by Kipling](jnglb10.txt?raw=true)                                   |  [txt](meow-jnglb10.txt?raw=true) [pdf](meow-jnglb10.pdf?raw=true) |  52,526 | [txt](meow-x2-jnglb10.txt?raw=true) [pdf](meow-x2-jnglb10.pdf?raw=true) | 105,052 |
+| [An Enquiry Concerning the Principles of Morals by David Hume](nqpmr10.txt?raw=true) | [txt](meow-nqpmr10.txt?raw=true) [pdf]( meow-nqpmr10.pdf?raw=true) |  50,603 | [txt](meow-x2-nqpmr10.txt?raw=true) [pdf](meow-x2-nqpmr10.pdf?raw=true) | 101,206 |
+| [Moby Dick; or The Whale, by Herman Melville](pg2701.txt?raw=true)                   |  [txt](meow-pg2701.txt?raw=true) [pdf]( meow-pg2701.pdf?raw=true)  | 215,136 |  [txt](meow-x2-pg2701.txt?raw=true) [pdf](meow-x2-pg2701.pdf?raw=true)  | 430,272 |
 
