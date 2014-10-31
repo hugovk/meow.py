@@ -35,3 +35,4 @@ Here's the output of running meow.py on some Project Gutenberg (Purrject Mewtenb
 | [An Enquiry Concerning the Principles of Morals by David Hume](nqpmr10.txt?raw=true) | [txt](meow-nqpmr10.txt?raw=true) [pdf]( meow-nqpmr10.pdf?raw=true) |  50,603 | [txt](meow-x2-nqpmr10.txt?raw=true) [pdf](meow-x2-nqpmr10.pdf?raw=true) | 101,206 |
 | [Moby Dick; or The Whale, by Herman Melville](pg2701.txt?raw=true)                   |  [txt](meow-pg2701.txt?raw=true) [pdf]( meow-pg2701.pdf?raw=true)  | 215,136 |  [txt](meow-x2-pg2701.txt?raw=true) [pdf](meow-x2-pg2701.pdf?raw=true)  | 430,272 |
 
+Finally, here's [meow.py put through meow.py](meow-meow.py).
