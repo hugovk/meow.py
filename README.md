@@ -1,5 +1,5 @@
-meow.py
-=======
+50,000 Meows
+============
 
 [![Build Status](https://travis-ci.org/hugovk/meow.py.svg?branch=master)](https://travis-ci.org/hugovk/meow.py)
 [![Coverage Status](https://coveralls.io/repos/hugovk/meow.py/badge.png?branch=master)](https://coveralls.io/r/hugovk/meow.py?branch=master)
