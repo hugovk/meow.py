@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 """
 Replace all words with meows, preserving punctuation.
+
+For NaNoGenMo 2014.
+https://github.com/dariusk/NaNoGenMo-2014/
 """
 from __future__ import print_function, unicode_literals
 
