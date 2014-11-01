@@ -1,0 +1,30 @@
+language: python
+
+python:
+ - pypy
+ - pypy3
+ - 2.6
+ - 2.7
+ - 3.2
+ - 3.3
+ - 3.4
+
+install:
+ - pip install coverage
+ - if [ "$TRAVIS_PYTHON_VERSION" == "2.6" ]; then pip install unittest2; fi
+
+script:
+ - coverage run --source=meow ./test_meow.py -v
+
+after_success:
+ - pip install coveralls
+ - coveralls
+
+after_script:
+ - coverage report
+ - pip install pep8 pyflakes
+ - pep8 --statistics --count *.py
+ - pyflakes *.py | tee >(wc -l)
+
+matrix:
+  fast_finish: true
