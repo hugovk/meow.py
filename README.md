@@ -1,6 +1,9 @@
 meow.py
 =======
 
+[![Build Status](https://travis-ci.org/hugovk/meow.py.svg?branch=master)](https://travis-ci.org/hugovk/meow.py)
+[![Coverage Status](https://coveralls.io/repos/hugovk/meow.py/badge.png?branch=master)](https://coveralls.io/r/hugovk/meow.py?branch=master)
+
 An entry for [NaNoGenMo 2014](https://github.com/dariusk/NaNoGenMo-2014/):
 
 > Spend the month of November writing code that generates a novel of 50k+ words.
