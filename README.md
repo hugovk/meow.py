@@ -32,16 +32,16 @@ Here's the output of running meow.py on some Project Gutenberg (Purrject Mewtenb
 
 | Original                                                                     |                        meow                        |  words |                     with translation                    |  words |
 |------------------------------------------------------------------------------|:--------------------------------------------------:|:------:|:-------------------------------------------------------:|:------:|
-| [Cats, by W. Gordon Stables](43429-0.txt?raw=true)                                   |  [txt](meow-43429-0.txt?raw=true) [pdf](meow-43429-0.pdf?raw=true) |  90,574 | [txt](meow-x2-43429-0.txt?raw=true) [pdf](meow-x2-43429-0.pdf?raw=true) | 181,149 |
-| [Cats, by Charles H. Ross](43790-0.txt?raw=true)                                     |  [txt](meow-43790-0.txt?raw=true) [pdf](meow-43790-0.pdf?raw=true) |  59,725 | [txt](meow-x2-43790-0.txt?raw=true) [pdf](meow-x2-43790-0.pdf?raw=true) | 119,451 |
-| [The Jungle Book by Kipling](jnglb10.txt?raw=true)                                   |  [txt](meow-jnglb10.txt?raw=true) [pdf](meow-jnglb10.pdf?raw=true) |  52,526 | [txt](meow-x2-jnglb10.txt?raw=true) [pdf](meow-x2-jnglb10.pdf?raw=true) | 105,052 |
-| [An Enquiry Concerning the Principles of Morals by David Hume](nqpmr10.txt?raw=true) | [txt](meow-nqpmr10.txt?raw=true) [pdf]( meow-nqpmr10.pdf?raw=true) |  50,603 | [txt](meow-x2-nqpmr10.txt?raw=true) [pdf](meow-x2-nqpmr10.pdf?raw=true) | 101,206 |
-| [Moby Dick; or The Whale, by Herman Melville](pg2701.txt?raw=true)                   |  [txt](meow-pg2701.txt?raw=true) [pdf]( meow-pg2701.pdf?raw=true)  | 215,136 |  [txt](meow-x2-pg2701.txt?raw=true) [pdf](meow-x2-pg2701.pdf?raw=true)  | 430,272 |
+| [*Cats*, by W. Gordon Stables](43429-0.txt?raw=true)                                   |  [txt](meow-43429-0.txt?raw=true) [pdf](meow-43429-0.pdf?raw=true) |  90,574 | [txt](meow-x2-43429-0.txt?raw=true) [pdf](meow-x2-43429-0.pdf?raw=true) | 181,149 |
+| [*Cats*, by Charles H. Ross](43790-0.txt?raw=true)                                     |  [txt](meow-43790-0.txt?raw=true) [pdf](meow-43790-0.pdf?raw=true) |  59,725 | [txt](meow-x2-43790-0.txt?raw=true) [pdf](meow-x2-43790-0.pdf?raw=true) | 119,451 |
+| [*The Jungle Book*, by Rudyard Kipling](jnglb10.txt?raw=true)                                   |  [txt](meow-jnglb10.txt?raw=true) [pdf](meow-jnglb10.pdf?raw=true) |  52,526 | [txt](meow-x2-jnglb10.txt?raw=true) [pdf](meow-x2-jnglb10.pdf?raw=true) | 105,052 |
+| [*An Enquiry Concerning the Principles of Morals*, by David Hume](nqpmr10.txt?raw=true) | [txt](meow-nqpmr10.txt?raw=true) [pdf]( meow-nqpmr10.pdf?raw=true) |  50,603 | [txt](meow-x2-nqpmr10.txt?raw=true) [pdf](meow-x2-nqpmr10.pdf?raw=true) | 101,206 |
+| [*Moby Dick; or The Whale*, by Herman Melville](pg2701.txt?raw=true)                   |  [txt](meow-pg2701.txt?raw=true) [pdf]( meow-pg2701.pdf?raw=true)  | 215,136 |  [txt](meow-x2-pg2701.txt?raw=true) [pdf](meow-x2-pg2701.pdf?raw=true)  | 430,272 |
 
 Extracts
 --------
 
-Here's part of Moby Dick:
+Here's part of *Moby Dick*:
 
 ```
 "MEEOW.... Me. mew Mew. MEOW. Meow meooow me meoow meow meeooooow me
@@ -66,7 +66,7 @@ MEOW-MEW, me meow, me meeoow." --MEEEOOOOOW'M MEEEEEEOOW
 MEEEOOOW (Meeeeoow me m Mew-Mew-Meeeeeeow).
 ```
 
-And here's part the Jungle Book with line-by-line translations:
+And here's part *The Jungle Book* with line-by-line translations:
 
 ```
 He was a mongoose, rather like a little cat in his fur and his
