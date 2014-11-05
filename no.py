@@ -38,6 +38,6 @@ if __name__ == '__main__':
         if args.translation:
             print()
             print(line.encode("utf-8"))
-        print(no_no(line, no).encode("utf-8"))
+        print(meow.meow_meow(line, no).encode("utf-8"))
 
 # End of file

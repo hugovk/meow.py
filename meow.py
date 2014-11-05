@@ -95,6 +95,6 @@ if __name__ == '__main__':
         if args.translation:
             print()
             print(line.encode("utf-8"))
-        print(meow_meow(line).encode("utf-8"))
+        print(meow_meow(line, meow).encode("utf-8"))
 
 # End of file
