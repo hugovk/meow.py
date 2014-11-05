@@ -6,26 +6,9 @@ from __future__ import print_function, unicode_literals
 
 import re
 import sys
+import meow
 import random
 import argparse
-
-
-def is_word(thing):
-    found = re.match(r"\w+", thing, re.UNICODE)
-    return found
-
-
-def no_no(line):
-    """Noify a line"""
-    noed = []
-    # Break line into words and non-words (e.g. punctuation and space)
-    things = re.findall(r"\w+|[^\w]", line, re.UNICODE)
-    for thing in things:
-        if is_word(thing):
-            noed.append(no(thing))
-        else:
-            noed.append(thing)
-    return u"".join(noed)
 
 
 def no(word):
@@ -37,26 +20,7 @@ def no(word):
     #  * first letter N
     #  * all others O
 
-    return capify("n" + ("o" * (length-1)), word)
-
-
-def capify(word, reference):
-    """Make sure word has the same capitalisation as reference"""
-    new_word = ""
-
-    # First check whole word before char-by-char
-    if reference.islower():
-        return word.lower()
-    elif reference.isupper():
-        return word.upper()
-
-    # Char-by-char checks
-    for i, c in enumerate(reference):
-        if c.isupper():
-            new_word += word[i].upper()
-        else:
-            new_word += word[i]
-    return new_word
+    return meow.capify("n" + ("o" * (length-1)), word)
 
 
 if __name__ == '__main__':
@@ -74,6 +38,6 @@ if __name__ == '__main__':
         if args.translation:
             print()
             print(line.encode("utf-8"))
-        print(no_no(line).encode("utf-8"))
+        print(no_no(line, no).encode("utf-8"))
 
 # End of file

@@ -18,14 +18,14 @@ def is_word(thing):
     return found
 
 
-def meow_meow(line):
+def meow_meow(line, converter_fun):
     """Meowify a line"""
     meowed = []
     # Break line into words and non-words (e.g. punctuation and space)
     things = re.findall(r"\w+|[^\w]", line, re.UNICODE)
     for thing in things:
         if is_word(thing):
-            meowed.append(meow(thing))
+            meowed.append(converter_fun(thing))
         else:
             meowed.append(thing)
     return u"".join(meowed)

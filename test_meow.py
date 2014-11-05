@@ -107,7 +107,7 @@ class TestIt(unittest.TestCase):
 
     def test_line(self):
         line = "On the bus"
-        out = meow.meow_meow(line)
+        out = meow.meow_meow(line, meow.meow)
         self.assertEqual(out, "Me mew mew")
 
     def test_is_word_1(self):
@@ -122,7 +122,7 @@ class TestIt(unittest.TestCase):
 
     def test_line_punctuation(self):
         line = "On the bus? On the bus."
-        out = meow.meow_meow(line)
+        out = meow.meow_meow(line, meow.meow)
         self.assertEqual(out, "Me mew mew? Me mew mew.")
 
 

@@ -5,6 +5,7 @@ Unit tests for no.py
 from __future__ import print_function, unicode_literals
 
 import unittest
+import meow
 import no
 import re
 
@@ -48,30 +49,6 @@ class TestIt(unittest.TestCase):
         self.sanity_check(word, out)
         self.assertEqual(out, "nooo")
 
-    def test_capify_1(self):
-        word = "nooo"
-        reference = "Book"
-        out = no.capify(word, reference)
-        self.assertEqual(out, "Nooo")
-
-    def test_capify_2(self):
-        word = "nooo"
-        reference = "BOOK"
-        out = no.capify(word, reference)
-        self.assertEqual(out, "NOOO")
-
-    def test_capify_3(self):
-        word = "nooo"
-        reference = "book"
-        out = no.capify(word, reference)
-        self.assertEqual(out, "nooo")
-
-    def test_capify_4(self):
-        word = "nooo"
-        reference = "BoOk"
-        out = no.capify(word, reference)
-        self.assertEqual(out, "NoOo")
-
     def test_upper_4_letter_word(self):
         word = "NOOO"
         out = no.no(word)
@@ -107,22 +84,12 @@ class TestIt(unittest.TestCase):
 
     def test_line(self):
         line = "On the bus"
-        out = no.no_no(line)
+        out = meow.meow_meow(line, no.no)
         self.assertEqual(out, "No noo noo")
-
-    def test_is_word_1(self):
-        thing = "word"
-        out = no.is_word(thing)
-        self.assertTrue(out)
-
-    def test_is_word_2(self):
-        thing = ";"
-        out = no.is_word(thing)
-        self.assertFalse(out)
 
     def test_line_punctuation(self):
         line = "On the bus? On the bus."
-        out = no.no_no(line)
+        out = meow.meow_meow(line, no.no)
         self.assertEqual(out, "No noo noo? No noo noo.")
         self.assertEqual(out, "No noo noo? No noo noo.")
 
