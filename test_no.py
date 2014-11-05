@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 """
-Unit tests for meow.py
+Unit tests for no.py
 """
 from __future__ import print_function, unicode_literals
 
 import unittest
-import meow
+import no
 import re
 
 
@@ -15,8 +15,8 @@ class TestIt(unittest.TestCase):
         self.assertEqual(len(word), len(out))
 
         # Check pattern
-        if len(word) > 4:
-            found = re.match("m[e]+[o]+w", out, re.IGNORECASE)
+        if len(word) > 1:
+            found = re.match("n[o]+", out, re.IGNORECASE)
             self.assertTrue(found)
 
         # Check caps
@@ -26,104 +26,105 @@ class TestIt(unittest.TestCase):
 
     def test_1_letter_word(self):
         word = "I"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "M")
+        self.assertEqual(out, "N")
 
     def test_2_letter_word(self):
         word = "on"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "me")
+        self.assertEqual(out, "no")
 
     def test_3_letter_word(self):
         word = "The"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "Mew")
+        self.assertEqual(out, "Noo")
 
     def test_4_letter_word(self):
         word = "book"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "meow")
+        self.assertEqual(out, "nooo")
 
     def test_capify_1(self):
-        word = "meow"
+        word = "nooo"
         reference = "Book"
-        out = meow.capify(word, reference)
-        self.assertEqual(out, "Meow")
+        out = no.capify(word, reference)
+        self.assertEqual(out, "Nooo")
 
     def test_capify_2(self):
-        word = "meow"
+        word = "nooo"
         reference = "BOOK"
-        out = meow.capify(word, reference)
-        self.assertEqual(out, "MEOW")
+        out = no.capify(word, reference)
+        self.assertEqual(out, "NOOO")
 
     def test_capify_3(self):
-        word = "meow"
+        word = "nooo"
         reference = "book"
-        out = meow.capify(word, reference)
-        self.assertEqual(out, "meow")
+        out = no.capify(word, reference)
+        self.assertEqual(out, "nooo")
 
     def test_capify_4(self):
-        word = "meow"
+        word = "nooo"
         reference = "BoOk"
-        out = meow.capify(word, reference)
-        self.assertEqual(out, "MeOw")
+        out = no.capify(word, reference)
+        self.assertEqual(out, "NoOo")
 
     def test_upper_4_letter_word(self):
-        word = "BOOK"
-        out = meow.meow(word)
+        word = "NOOO"
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "MEOW")
+        self.assertEqual(out, "NOOO")
 
     def test_capped_4_letter_word(self):
-        word = "Book"
-        out = meow.meow(word)
+        word = "Nooo"
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "Meow")
+        self.assertEqual(out, "Nooo")
 
     def test_mixcapped_4_letter_word(self):
-        word = "BooK"
-        out = meow.meow(word)
+        word = "NooO"
+        out = no.no(word)
         self.sanity_check(word, out)
-        self.assertEqual(out, "MeoW")
+        self.assertEqual(out, "NooO")
 
     def test_5_letter_word(self):
         word = "clock"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
 
     def test_6_letter_word(self):
         word = "whales"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
 
     def test_13_letter_word(self):
         word = "Extraordinary"
-        out = meow.meow(word)
+        out = no.no(word)
         self.sanity_check(word, out)
 
     def test_line(self):
         line = "On the bus"
-        out = meow.meow_meow(line)
-        self.assertEqual(out, "Me mew mew")
+        out = no.no_no(line)
+        self.assertEqual(out, "No noo noo")
 
     def test_is_word_1(self):
         thing = "word"
-        out = meow.is_word(thing)
+        out = no.is_word(thing)
         self.assertTrue(out)
 
     def test_is_word_2(self):
         thing = ";"
-        out = meow.is_word(thing)
+        out = no.is_word(thing)
         self.assertFalse(out)
 
     def test_line_punctuation(self):
         line = "On the bus? On the bus."
-        out = meow.meow_meow(line)
-        self.assertEqual(out, "Me mew mew? Me mew mew.")
+        out = no.no_no(line)
+        self.assertEqual(out, "No noo noo? No noo noo.")
+        self.assertEqual(out, "No noo noo? No noo noo.")
 
 
 if __name__ == '__main__':
