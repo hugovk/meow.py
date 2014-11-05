@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 """
-Replace all words with meows, preserving punctuation.
-
-For NaNoGenMo 2014.
-https://github.com/dariusk/NaNoGenMo-2014/
+Replace all words with no, preserving punctuation. Based on meow.py.
 """
 from __future__ import print_function, unicode_literals
 
@@ -18,47 +15,29 @@ def is_word(thing):
     return found
 
 
-def meow_meow(line):
-    """Meowify a line"""
-    meowed = []
+def no_no(line):
+    """Noify a line"""
+    noed = []
     # Break line into words and non-words (e.g. punctuation and space)
     things = re.findall(r"\w+|[^\w]", line, re.UNICODE)
     for thing in things:
         if is_word(thing):
-            meowed.append(meow(thing))
+            noed.append(no(thing))
         else:
-            meowed.append(thing)
-    return u"".join(meowed)
+            noed.append(thing)
+    return u"".join(noed)
 
 
-def meow(word):
-    """Meowify a word"""
-    meowed = ""
+def no(word):
+    """Noify a word"""
+    noed = ""
     length = len(word)
 
-    if length == 1:
-        return capify("m", word)
-    elif length == 2:
-        return capify("me", word)
-    elif length == 3:
-        return capify("mew", word)
-    elif length == 4:
-        return capify("meow", word)
+    # Words longer than two will have:
+    #  * first letter N
+    #  * all others O
 
-    # Words longer than four will have:
-    #  * first letter M
-    #  * last letter W
-    #  * middle with a random number of Es, then some Os
-
-    # Number of EOs:
-    eeohs = length - len("m") - len("w")
-    # Number of Es:
-    ees = random.randrange(1, eeohs)
-    # Number of Os:
-    ohs = eeohs - ees
-
-    meowed = "m" + ("e" * ees) + ("o" * ohs) + "w"
-    return capify(meowed, word)
+    return capify("n" + ("o" * (length-1)), word)
 
 
 def capify(word, reference):
@@ -82,7 +61,7 @@ def capify(word, reference):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description="Replace all words with meows, preserving punctuation.")
+        description="Replace all words with nos, preserving punctuation.")
     parser.add_argument('infile', nargs='?', type=argparse.FileType('r'),
                         default=sys.stdin, help="Input text")
     parser.add_argument('-t', '--translation', action="store_true",
@@ -95,6 +74,6 @@ if __name__ == '__main__':
         if args.translation:
             print()
             print(line.encode("utf-8"))
-        print(meow_meow(line).encode("utf-8"))
+        print(no_no(line).encode("utf-8"))
 
 # End of file
