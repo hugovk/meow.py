@@ -7,8 +7,8 @@ python:
  - 2.7
  - 3.3
  - 3.4
- 
- sudo: false
+
+sudo: false
 
 install:
  - pip install coverage
