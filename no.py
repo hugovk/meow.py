@@ -4,16 +4,13 @@ Replace all words with no, preserving punctuation. Based on meow.py.
 """
 from __future__ import print_function, unicode_literals
 
-import re
 import sys
 import meow
-import random
 import argparse
 
 
 def no(word):
     """Noify a word"""
-    noed = ""
     length = len(word)
 
     # Words longer than two will have:
