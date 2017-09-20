@@ -3,17 +3,15 @@ language: python
 python:
  - pypy
  - pypy3
- - 2.6
  - 2.7
- - 3.3
- - 3.4
+ - 3.6
  - 3.5
+ - 3.4
 
 sudo: false
 
 install:
  - pip install coverage
- - if [ "$TRAVIS_PYTHON_VERSION" == "2.6" ]; then pip install unittest2; fi
 
 script:
  - coverage run --source=meow ./test_meow.py -v
