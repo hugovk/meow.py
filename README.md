@@ -18,6 +18,18 @@ Well, someone had better create 50,000 meows just to get it out of the way.
 
 But this isn't just "meow" 50,000 times. meow.py replaces all words with a meow of the same length, keeping punctuation.
 
+Press
+-----
+
+* *The Atlantic*: [*Moby Dick* in 50,000 Meows and Other Tales That Computers Tell](https://www.theatlantic.com/technology/archive/2014/12/moby-dick-in-50000-meows-and-other-tales-that-computers-tell/383340/)
+* *UC Berkeley Comparative Literature Undergraduate Journal*: [Challenging the Discipline, One Code at a Time: Comparative Literature and Its Discontents](https://ucbcluj.org/2015/09/23/challenging-the-discipline-one-code-at-a-time-comparative-literature-and-its-discontents/)
+* *The Guardian*: [Once upon a bot: can we teach computers to write fiction?](https://www.theguardian.com/books/2014/nov/11/can-computers-write-fiction-artificial-intelligence)
+* *Vox*: [Read a version of The Jungle Book written in meows, thanks to this program](https://www.vox.com/2014/11/11/7193531/meow-cat-books)
+* *dev.to*: [Who are the Audiences of Computer-Generated Novels?](https://dev.to/tra/who-are-the-audiences-of-computer-generated-novels)
+* *Sabotage Reviews*: [9 Computer-Generated Novels You Should Read, or Attempt To, or At Least Look At In Wonderment](http://sabotagereviews.com/2014/12/10/9-computer-generated-novels-you-should-read-or-attempt-to-or-at-least-look-at-in-wonderment/)
+* *Safari Books Online*: [NaNoGenMo 2014: A procedurally generated mysterious codex](https://www.safaribooksonline.com/blog/2014/11/08/nanogenmo2014-procedurally-generated-mysterious-codex/)
+* *Nerdcore*: [50.000 MEOWS](http://www.nerdcore.de/2014/11/14/50-000-meows/)
+
 Usage
 -----
 
