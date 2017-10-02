@@ -106,3 +106,8 @@ meoow mew: "Meow-meow-meeow-meoow-meow!"
 ```
 
 Finally, here's [meow.py put through meow.py](meow-meow.py).
+
+See also
+--------
+
+* [50,000 Meows *rewritten in go*](https://github.com/hungnq1989/meowify)
