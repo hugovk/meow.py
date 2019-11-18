@@ -2,7 +2,6 @@
 """
 Replace all words with no, preserving punctuation. Based on meow.py.
 """
-from __future__ import print_function, unicode_literals
 
 import sys
 import meow

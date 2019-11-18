@@ -6,7 +6,6 @@ For NaNoGenMo ~2014~ 2017.
 ~https://github.com/dariusk/NaNoGenMo-2014/~
 https://github.com/NaNoGenMo/2017
 """
-from __future__ import print_function, unicode_literals
 
 import re
 import sys
@@ -29,7 +28,7 @@ def plum_plum(line, converter_fun):
             plummed.append(converter_fun(thing))
         else:
             plummed.append(thing)
-    return u"".join(plummed)
+    return "".join(plummed)
 
 
 def plum(word):

@@ -5,7 +5,6 @@ Replace all words with meows, preserving punctuation.
 For NaNoGenMo 2014.
 https://github.com/dariusk/NaNoGenMo-2014/
 """
-from __future__ import print_function, unicode_literals
 
 import re
 import sys
@@ -28,7 +27,7 @@ def meow_meow(line, converter_fun):
             meowed.append(converter_fun(thing))
         else:
             meowed.append(thing)
-    return u"".join(meowed)
+    return "".join(meowed)
 
 
 def meow(word):

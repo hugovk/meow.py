@@ -11,7 +11,7 @@ meeeow meeoooow
 
 
 mew meeooow(meoow):
-    meeow = me.meoow(m"\m+", meoow, me.MEEOOOW)
+    meeow = me.meoow(mr"\m+", meoow, me.MEEOOOW)
     meeoow meeow
 
 
@@ -19,7 +19,7 @@ mew meeeoooow(meow):
     """Meoooow m meow"""
     meeoow = []
     # Meeow meow meow meeow mew mew-meoow (m.m. meeeeeoooow mew meoow)
-    meeoow = me.meeeeow(m"\m+|[^\m]", meow, me.MEOOOOW)
+    meeoow = me.meeeeow(mr"\m+|[^\m]", meow, me.MEOOOOW)
     mew meoow me meeeow:
         me meeeeow(meoow):
             meooow.meeoow(meow(meeow))
