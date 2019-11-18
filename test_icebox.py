@@ -2,7 +2,6 @@
 """
 Unit tests for icebox.py
 """
-from __future__ import print_function, unicode_literals
 
 import unittest
 import icebox

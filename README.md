@@ -2,7 +2,7 @@
 ============
 
 [![Build Status](https://travis-ci.org/hugovk/meow.py.svg?branch=master)](https://travis-ci.org/hugovk/meow.py)
-[![Coverage Status](https://coveralls.io/repos/hugovk/meow.py/badge.png?branch=master)](https://coveralls.io/r/hugovk/meow.py?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/hugovk/meow.py/badge.svg?branch=master)](https://coveralls.io/github/hugovk/meow.py?branch=master)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hugovk/meow.py/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hugovk/meow.py/?branch=master)
 [![Code Health](https://landscape.io/github/hugovk/meow.py/master/landscape.svg)](https://landscape.io/github/hugovk/meow.py/master)
 
