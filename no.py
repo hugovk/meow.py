@@ -41,10 +41,10 @@ if __name__ == "__main__":
 
     # for line in fileinput.input(openhook=fileinput.hook_encoded("utf-8")):
     for line in args.infile:
-        line = line.decode("utf-8-sig").rstrip()  # No BOM
+        line = line.rstrip()  # No BOM
         if args.translation:
             print()
-            print(line.encode("utf-8"))
-        print(meow.meow_meow(line, no).encode("utf-8"))
+            print(line)
+        print(meow.meow_meow(line, no))
 
 # End of file
