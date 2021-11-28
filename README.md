@@ -1,10 +1,9 @@
 50,000 Meows
 ============
 
-[![Build Status](https://travis-ci.org/hugovk/meow.py.svg?branch=master)](https://travis-ci.org/hugovk/meow.py)
-[![Coverage Status](https://coveralls.io/repos/github/hugovk/meow.py/badge.svg?branch=master)](https://coveralls.io/github/hugovk/meow.py?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hugovk/meow.py/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hugovk/meow.py/?branch=master)
-[![Code Health](https://landscape.io/github/hugovk/meow.py/master/landscape.svg)](https://landscape.io/github/hugovk/meow.py/master)
+[![Test](https://github.com/hugovk/meow.py/actions/workflows/test.yml/badge.svg)](https://github.com/hugovk/meow.py/actions/workflows/test.yml)
+[![Codecov](https://codecov.io/gh/hugovk/meow.py/branch/main/graph/badge.svg?token=7BAGzZptmW)](https://codecov.io/gh/hugovk/meow.py)
+[![Code style: Black](https://img.shields.io/badge/code%20style-Black-000000.svg)](https://github.com/psf/black)
 
 An entry for [NaNoGenMo 2014](https://github.com/dariusk/NaNoGenMo-2014/):
 
