@@ -6,10 +6,10 @@ For NaNoGenMo 2014.
 https://github.com/dariusk/NaNoGenMo-2014/
 """
 
+import argparse
+import random
 import re
 import sys
-import random
-import argparse
 
 
 def is_word(thing):
@@ -79,16 +79,26 @@ def capify(word, reference):
     return new_word
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Replace all words with meows, preserving punctuation.")
-    parser.add_argument('infile', nargs='?', type=argparse.FileType('r'),
-                        default=sys.stdin, help="Input text")
-    parser.add_argument('-t', '--translation', action="store_true",
-                        help="Output a line-by-line translation")
+        description="Replace all words with meows, preserving punctuation."
+    )
+    parser.add_argument(
+        "infile",
+        nargs="?",
+        type=argparse.FileType("r"),
+        default=sys.stdin,
+        help="Input text",
+    )
+    parser.add_argument(
+        "-t",
+        "--translation",
+        action="store_true",
+        help="Output a line-by-line translation",
+    )
     args = parser.parse_args()
 
-#     for line in fileinput.input(openhook=fileinput.hook_encoded("utf-8")):
+    # for line in fileinput.input(openhook=fileinput.hook_encoded("utf-8")):
     for line in args.infile:
         line = line.decode("utf-8-sig").rstrip()  # No BOM
         if args.translation:

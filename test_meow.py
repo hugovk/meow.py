@@ -3,13 +3,13 @@
 Unit tests for meow.py
 """
 
-import unittest
-import meow
 import re
+import unittest
+
+import meow
 
 
 class TestIt(unittest.TestCase):
-
     def sanity_check(self, word, out):
         self.assertEqual(len(word), len(out))
 
@@ -20,8 +20,7 @@ class TestIt(unittest.TestCase):
 
         # Check caps
         for i in range(len(word)):
-            self.assertEqual(word[i].isupper(),
-                             out[i].isupper())
+            self.assertEqual(word[i].isupper(), out[i].isupper())
 
     def test_1_letter_word(self):
         word = "I"
@@ -125,7 +124,7 @@ class TestIt(unittest.TestCase):
         self.assertEqual(out, "Me mew mew? Me mew mew.")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
 
 # End of file
