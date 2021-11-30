@@ -28,14 +28,11 @@ jobs:
         run: |
           python -m pip install -U pip
           python -m pip install -U wheel
-          python -m pip install -U coverage codecov
+          python -m pip install -U pytest pytest-cov coverage codecov
 
       - name: Tests
         run: |
-          coverage run --source=meow ./test_meow.py -v
-          coverage run --append --source=no ./test_no.py -v
-          coverage run --append --source=icebox ./test_icebox.py -v
-          coverage run --append --source=no_meows ./test_no_meows.py -v
+          pytest --cov --ignore meow-meow.py
           coverage xml
 
       - name: Upload coverage
