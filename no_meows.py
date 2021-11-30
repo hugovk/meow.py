@@ -32,6 +32,7 @@ def meow_meow(line, converter_fun):
 
 def meow(word):
     """Meowify a word"""
+    return " " * len(word)
     meowed = ""
     length = len(word)
 
