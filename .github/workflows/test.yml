@@ -35,6 +35,7 @@ jobs:
           coverage run --source=meow ./test_meow.py -v
           coverage run --append --source=no ./test_no.py -v
           coverage run --append --source=icebox ./test_icebox.py -v
+          coverage run --append --source=no_meows ./test_no_meows.py -v
           coverage xml
 
       - name: Upload coverage
