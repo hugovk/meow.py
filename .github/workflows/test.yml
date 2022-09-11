@@ -38,5 +38,4 @@ jobs:
       - name: Upload coverage
         uses: codecov/codecov-action@v2
         with:
-          flags: ${{ matrix.codecov-flag }}
           name: ${{ matrix.os }} Python ${{ matrix.python-version }}
