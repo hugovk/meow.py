@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 """
-Replace all words with meows, preserving punctuation.
+Black out all repeated words, preserving punctuation.
 
-For NaNoGenMo 2014.
-https://github.com/dariusk/NaNoGenMo-2014/
+For NaNoGenMo 2022.
+https://github.com/NaNoGenMo/2022/
 """
 
 import argparse
 import random
 import re
 import sys
+
+all_words = set()
 
 
 def is_word(thing):
@@ -28,6 +30,13 @@ def meow_meow(line, converter_fun):
         else:
             meowed.append(thing)
     return "".join(meowed)
+
+
+def blackout(word):
+    if word.lower() in all_words:
+        return len(word) * "█"
+    all_words.add(word.lower())
+    return word
 
 
 def meow(word):
@@ -104,6 +113,6 @@ if __name__ == "__main__":
         if args.translation:
             print()
             print(line)
-        print(meow_meow(line, meow))
+        print(meow_meow(line, blackout))
 
 # End of file
