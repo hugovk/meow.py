@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-Black out all repeated words, preserving punctuation.
+Black out words until they've appeared more than once, preserving punctuation.
 
 For NaNoGenMo 2022.
 https://github.com/NaNoGenMo/2022/
@@ -34,9 +34,9 @@ def meow_meow(line, converter_fun):
 
 def blackout(word):
     if word.lower() in all_words:
-        return len(word) * "█"
+        return word
     all_words.add(word.lower())
-    return word
+    return len(word) * "█"
 
 
 def meow(word):
